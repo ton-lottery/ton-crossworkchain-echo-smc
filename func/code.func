@@ -12,7 +12,7 @@ int workchains_equal?(slice addr1, slice addr2) asm "REWRITESTDADDR DROP SWAP RE
 
   throw_if(666, workchains_equal?(sender, my_address()));
 
-  raw_reserve(10000000000, 0);
+  raw_reserve(1000000000, 0);
 
   builder msg = begin_cell()
     .store_uint(0x18, 6)
